@@ -15,5 +15,4 @@ Before running the script, please organize your data as follows:
 
 Navigate to the directory containing both your script and the `dataset/` folder:
 
-```bash
-python your_script.py
+Run the jupyter notebook file. 
