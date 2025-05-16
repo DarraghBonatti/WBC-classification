@@ -29,15 +29,34 @@ This guide explains how to use a YOLO (You Only Look Once) object detection mode
 
 Before using the model, ensure you have the following:
 
-- **YOLO model weights** (`.pt` file for YOLOv8) 
+- **YOLO model weights** (`.pt` file for YOLOv8, you can download these from ultralytics, in this model we use version yolov8m.pt) 
 - **dataset for training**
 - **Annotation files** in YOLO format (`.txt` files with bounding box coordinates per image)
+- **Yaml file** only required if you want to train the model. This is used to tell  Example yaml file below. 
+data.yaml
+        path: /path/to/dataset  # root directory of your dataset
+        train: images/train     # relative to 'path'
+        val: images/val         # relative to 'path'
+        
+        names:
+          - wbc
+  
+The yaml file must match direcotry structure, 
+        dataset/
+          ├── images/
+          │   ├── train/
+          │   └── val/
+          └── labels/
+              ├── train/
+              └── val/
+
+
 
 ### 🔗 Download Annotations
 
-To train or test the model on new images, you'll need the annotated dataset in YOLO format. You can download the annotation files here:
+To train or test the model on new images, you'll need the annotated dataset in YOLO format. Click below to see more on this. 
 
-**[📥 Download Annotations](https://example.com/annotations-download)**  
+**[📥 YOLO Annotations]([https://example.com/annotations-download](https://docs.ultralytics.com/datasets/detect/#ultralytics-yolo-format))**  
 *(Replace this with your actual link)*
 
 Each `.txt` file should have the same name as the corresponding image file and contain one line per object with the format:
