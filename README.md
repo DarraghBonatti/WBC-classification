@@ -34,14 +34,17 @@ Before using the model, ensure you have the following:
 - **Annotation files** in YOLO format (`.txt` files with bounding box coordinates per image)
 - **Yaml file** only required if you want to train the model. This is used to tell  Example yaml file below. 
 data.yaml
+'''
       - path: /path/to/dataset  # root directory of your dataset
         train: images/train     # relative to 'path'
         val: images/val         # relative to 'path'
         
         names:
           - wbc
+'''
   
 The yaml file must match direcotry structure, 
+'''
         dataset/
           ├── images/
           │   ├── train/
@@ -49,7 +52,7 @@ The yaml file must match direcotry structure,
           └── labels/
               ├── train/
               └── val/
-
+'''
 
 
 ### 🔗 Download Annotations
