@@ -1,0 +1,10 @@
+tensorflow==2.16.2
+opencv-python
+matplotlib
+numpy
+pandas
+scikit-learn
+albumentations
+tqdm
+PyYAML
+ultralytics
