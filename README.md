@@ -32,9 +32,10 @@ Before using the model, ensure you have the following:
 - **YOLO model weights** (`.pt` file for YOLOv8, you can download these from ultralytics, in this model we use version yolov8m.pt) 
 - **dataset for training**
 - **Annotation files** in YOLO format (`.txt` files with bounding box coordinates per image) Each `.txt` file should have the same name as the corresponding image file and contain one line per object with the format:
-      example, image1.png
-        class, x, y, width, height,
+      
   ```
+              example, image1.png
+              class, x, y, width, height,
               0 0.512 0.433 0.230 0.310
               0 0.725 0.650 0.150 0.200
 
