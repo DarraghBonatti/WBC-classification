@@ -40,7 +40,7 @@ Before using the model, ensure you have the following:
               0 0.725 0.650 0.150 0.200
 
   ```
-- **Yaml file** only required if you want to train the model. This is used to tell the model where our training and validation set images and labels are, see example yaml file below. 
+- **Yaml file** This is used to tell the model where our training and validation set images and labels are, see example yaml file below. 
 data.yaml
 ```
       - path: /path/to/dataset  # root directory of your dataset
