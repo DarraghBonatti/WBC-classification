@@ -31,8 +31,15 @@ Before using the model, ensure you have the following:
 
 - **YOLO model weights** (`.pt` file for YOLOv8, you can download these from ultralytics, in this model we use version yolov8m.pt) 
 - **dataset for training**
-- **Annotation files** in YOLO format (`.txt` files with bounding box coordinates per image)
-- **Yaml file** only required if you want to train the model. This is used to tell  Example yaml file below. 
+- **Annotation files** in YOLO format (`.txt` files with bounding box coordinates per image) Each `.txt` file should have the same name as the corresponding image file and contain one line per object with the format:
+      example, image1.png
+        class, x, y, width, height,
+  ```
+              0 0.512 0.433 0.230 0.310
+              0 0.725 0.650 0.150 0.200
+
+  ```
+- **Yaml file** only required if you want to train the model. This is used to tell the model where our training and validation set images and labels are, see example yaml file below. 
 data.yaml
 ```
       - path: /path/to/dataset  # root directory of your dataset
@@ -60,8 +67,8 @@ The yaml file must match direcotry structure,
 To train or test the model on new images, you'll need the annotated dataset in YOLO format. Click below to see more on this. 
 
 **[📥 YOLO Annotations]([https://example.com/annotations-download](https://docs.ultralytics.com/datasets/detect/#ultralytics-yolo-format))**  
-*(Replace this with your actual link)*
 
-Each `.txt` file should have the same name as the corresponding image file and contain one line per object with the format:
+
+
 
 
