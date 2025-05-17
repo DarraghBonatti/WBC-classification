@@ -67,7 +67,7 @@ The yaml file must match direcotry structure,
 
 To train or test the model on new images, you'll need the annotated dataset in YOLO format. Click below to see more on this. 
 
-**[📥 YOLO Annotations]([https://example.com/annotations-download](https://docs.ultralytics.com/datasets/detect/#ultralytics-yolo-format))**  
+**[📥 YOLO Annotations]([https://example.com/annotations-download](https://docs.ultralytics.com/datasets/detect/#ultralytics-yolo-format))**  Here
 
 # Requirements
 To install the necessary packages for both models, run ``` pip install -r requirements.txt ``` 
